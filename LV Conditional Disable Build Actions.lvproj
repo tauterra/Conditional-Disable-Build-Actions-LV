@@ -15,19 +15,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="build actions" Type="Folder">
-			<Item Name="subVIs" Type="Folder">
-				<Item Name="cache.vi" Type="VI" URL="../build actions/subVIs/cache.vi"/>
-				<Item Name="format_CCSymbols_for_project.vi" Type="VI" URL="../build actions/subVIs/format_CCSymbols_for_project.vi"/>
-				<Item Name="parse_build_spec.vi" Type="VI" URL="../build actions/subVIs/parse_build_spec.vi"/>
-				<Item Name="parse_project_CCSymbols.vi" Type="VI" URL="../build actions/subVIs/parse_project_CCSymbols.vi"/>
-				<Item Name="process_project_item.vi" Type="VI" URL="../build actions/subVIs/process_project_item.vi"/>
-				<Item Name="read_symbols_from_project_item.vi" Type="VI" URL="../build actions/subVIs/read_symbols_from_project_item.vi"/>
-				<Item Name="restore_project_item.vi" Type="VI" URL="../build actions/subVIs/restore_project_item.vi"/>
-				<Item Name="update_map.vi" Type="VI" URL="../build actions/subVIs/update_map.vi"/>
-				<Item Name="write_symbols_to_project_item.vi" Type="VI" URL="../build actions/subVIs/write_symbols_to_project_item.vi"/>
-			</Item>
-			<Item Name="post-reset-conditional-disable.vi" Type="VI" URL="../build actions/post-reset-conditional-disable.vi"/>
-			<Item Name="pre-set-conditional-disable.vi" Type="VI" URL="../build actions/pre-set-conditional-disable.vi"/>
+			<Item Name="Conditional Disable Build Actions.lvlib" Type="Library" URL="../build actions/Conditional Disable Build Actions.lvlib"/>
 		</Item>
 		<Item Name="LICENSE" Type="Document" URL="../LICENSE"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
@@ -65,7 +53,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{AE74B2CC-0F84-4C72-9E35-871B4FA82E5B}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
-				<Property Name="Bld_version.build" Type="Int">7</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Conditional Disable Build Actions.llb</Property>
@@ -78,12 +66,12 @@
 				<Property Name="Source[0].itemID" Type="Str">{8C1EEFA1-D87C-4763-81BA-A96A8CDD42C5}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/build actions/post-reset-conditional-disable.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/build actions/Conditional Disable Build Actions.lvlib/post-reset-conditional-disable.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[1].VI.LLBtopLevel" Type="Bool">true</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/build actions/pre-set-conditional-disable.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/build actions/Conditional Disable Build Actions.lvlib/pre-set-conditional-disable.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[2].VI.LLBtopLevel" Type="Bool">true</Property>
@@ -106,8 +94,8 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/My Application$Test=a&amp;Foo=bar</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/build actions/post-reset-conditional-disable.vi</Property>
-				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/build actions/pre-set-conditional-disable.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/build actions/Conditional Disable Build Actions.lvlib/post-reset-conditional-disable.vi</Property>
+				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/build actions/Conditional Disable Build Actions.lvlib/pre-set-conditional-disable.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{AF760930-D96B-40B8-B582-8F339B74D429}</Property>
 				<Property Name="Bld_version.build" Type="Int">32</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
@@ -118,7 +106,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application$Test=a&amp;Foo=bar/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{1D4EA320-043F-4D23-97EB-8E63D249A06B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A419C5FF-C6F6-45E2-91F9-F4D2A9805233}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -147,8 +135,8 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/My Application$Test=b</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/build actions/post-reset-conditional-disable.vi</Property>
-				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/build actions/pre-set-conditional-disable.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/build actions/Conditional Disable Build Actions.lvlib/post-reset-conditional-disable.vi</Property>
+				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/build actions/Conditional Disable Build Actions.lvlib/pre-set-conditional-disable.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B9C71FCF-28D8-4CB8-BC56-99732D5D82C5}</Property>
 				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
