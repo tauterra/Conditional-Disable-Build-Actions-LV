@@ -29,6 +29,7 @@
 			<Item Name="post-reset-conditional-disable.vi" Type="VI" URL="../build actions/post-reset-conditional-disable.vi"/>
 			<Item Name="pre-set-conditional-disable.vi" Type="VI" URL="../build actions/pre-set-conditional-disable.vi"/>
 		</Item>
+		<Item Name="LICENSE" Type="Document" URL="../LICENSE"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -64,7 +65,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{AE74B2CC-0F84-4C72-9E35-871B4FA82E5B}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Conditional Disable Build Actions.llb</Property>
